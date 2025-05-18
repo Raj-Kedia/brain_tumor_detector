@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %} Home{% endblock %}
+
+{% block head %}
+<style>
+    body, html {
+        height: 100%;
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+<div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <form method="POST" enctype="multipart/form-data" class="p-4 border rounded shadow bg-white">
+        {% csrf_token %}
+        <div class="input-group mb-3">
+            <input type="file" name="image" class="form-control" id="inputGroupFile02">
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Submit</button>
+    </form>
+</div>
+{% endblock %}
