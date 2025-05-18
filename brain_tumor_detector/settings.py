@@ -30,7 +30,9 @@ DEBUG = os.environ.get("DEBUG", True)
 
 ALLOWED_HOSTS = ["*"]
 
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://braintumordetector-production.up.railway.app/"]
+CSRF_COOKIE_SECURE = True
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
