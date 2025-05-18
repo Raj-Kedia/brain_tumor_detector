@@ -27,13 +27,18 @@ SECRET_KEY = os.environ.get(
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG", True)
-
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["braintumordetector-production.up.railway.app", "*"]
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://braintumordetector-production.up.railway.app/"]
+    "https://braintumordetector-production.up.railway.app"
+]
+
 CSRF_COOKIE_SECURE = True
+
 MEDIA_URL = '/media/'
+
+TF_ENABLE_ONEDNN_OPTS = 0
+
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
