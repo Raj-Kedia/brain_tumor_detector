@@ -1,0 +1,5 @@
+[phases.setup]
+nixPkgs = ["bash"]
+
+[phases.build]
+cmds = ["chmod +x brain_tumor_detector/build.sh", "./brain_tumor_detector/build.sh"]
