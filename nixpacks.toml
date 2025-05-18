@@ -2,4 +2,4 @@
 nixPkgs = ["bash"]
 
 [phases.build]
-cmds = ["chmod +x brain_tumor_detector/build.sh", "./brain_tumor_detector/build.sh"]
+cmds = ["chmod +x ./build.sh", "./build.sh"]
