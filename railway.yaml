@@ -3,7 +3,7 @@ services:
     name: brain_tumor_detector
     env: python
     buildCommand: "./build.sh"
-    startCommand: "gunicorn chess_reviewer.wsgi:application"
+    startCommand: "gunicorn brain_tumor_detector.wsgi:application"
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.11
